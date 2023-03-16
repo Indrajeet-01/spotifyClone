@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #CBEDD5;
+    font-family: 'Varela Round' sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background: #439A97;
+    color: white;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.container{
+    min-height: 65vh;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 26px;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.songItemContainer{
+    margin-top: 30px;
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background: #439A97;
+    padding: 12px 0;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+.icons{
+    margin: 16px 0;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background: white;
+    
+    color: black;
+    margin: 12px 0;
+    padding: 0 18px 0 0;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 34px;
+}
+.songlistplay i{
+    cursor: pointer;
+}
+.songItem img{
+    width: 45px;
+    margin: 0 28px;
+    border-radius: 4px;
+}
+.timestamp{
+    margin: 0 20px;
+    
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.songInfo img{
+    margin-right: 18px;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
